@@ -18,7 +18,8 @@ def custom_settings():
         'kotti.configurators': 'kotti_tinymce.kotti_configure '
                                'kotti_boxes.kotti_configure',
         'kotti_boxes.managers': 'kotti_boxes.resources.RightBoxManager '
-                                'kotti_boxes.resources.LeftBoxManager',
+                                'kotti_boxes.resources.LeftBoxManager '
+                                'kotti_boxes.resources.AboveFooterBoxManager ',
         'kotti_boxes.boxes': 'kotti_boxes.resources.BannerBox '
                              'kotti_boxes.resources.TextBox',
         'kotti.use_workflow': 'kotti:workflow.zcml',

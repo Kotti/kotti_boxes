@@ -4,6 +4,8 @@ def test_manager_registry_names():
 
     assert 'RightBoxManager' in box_manager_registry.get_component_names()
     assert 'LeftBoxManager' in box_manager_registry.get_component_names()
+    assert 'AboveFooterBoxManager' in \
+           box_manager_registry.get_component_names()
 
 
 def test_box_registry_names():
