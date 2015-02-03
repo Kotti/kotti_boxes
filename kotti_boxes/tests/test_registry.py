@@ -8,6 +8,8 @@ def test_manager_registry_names():
            box_manager_registry.get_component_names()
     assert 'AboveContentBoxManager' in \
            box_manager_registry.get_component_names()
+    assert 'BelowContentBoxManager' in \
+           box_manager_registry.get_component_names()
 
 
 def test_box_registry_names():

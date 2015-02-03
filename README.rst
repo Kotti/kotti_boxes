@@ -123,6 +123,7 @@ To enable the extension in your Kotti site, activate the configurator::
         kotti_boxes.resources.LeftBoxManager
         kotti_boxes.resources.AboveFooterBoxManager
         kotti_boxes.resources.AboveContentBoxManager
+        kotti_boxes.resources.BelowContentBoxManager
 
     kotti_boxes.boxes =
         kotti_boxes.resources.BannerBox
