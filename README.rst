@@ -104,7 +104,7 @@ Probably this package will be rebranded under kotti_boxes.
 
 `Find out more about Kotti`_
 
-Development happens at https://github.com/davidemoro/kotti_boxes
+Development happens at https://github.com/truelab/kotti_boxes
 
 .. |build status| image:: https://secure.travis-ci.org/truelab/kotti_boxes.png?branch=master
 .. _build status: http://travis-ci.org/truelab/kotti_boxes
