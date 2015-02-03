@@ -1,6 +1,8 @@
 kotti_boxes
 ***********
 
+[![Build Status](https://travis-ci.org/truelab/kotti_boxes.svg)](https://travis-ci.org/truelab/kotti_boxes)
+
 This is a backend only extension that allows to add one or more
 box manager groups.
 
