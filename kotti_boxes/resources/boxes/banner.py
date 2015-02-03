@@ -34,3 +34,4 @@ class BannerBox(Image):
     def __init__(self, link=u"", **kwargs):
         super(BannerBox, self).__init__(**kwargs)
         self.link = link
+        self.in_navigation = False

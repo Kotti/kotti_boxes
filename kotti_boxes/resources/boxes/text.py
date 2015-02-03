@@ -27,3 +27,7 @@ class TextBox(Document):
         add_view=u'add_text_box',
         addable_to=[]  # updated at startup time
         )
+
+    def __init__(self, **kwargs):
+        super(TextBox, self).__init__(**kwargs)
+        self.in_navigation = False
