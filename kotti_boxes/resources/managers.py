@@ -49,3 +49,16 @@ class AboveFooterBoxManager(BaseBoxManager):
         add_view=u'add_box_manager_above_footer',
         dotted_class='kotti_boxes.resources.AboveFooterBoxManager',
         )
+
+
+class AboveContentBoxManager(BaseBoxManager):
+    """ """
+
+    id = Column(Integer, ForeignKey('base_box_managers.id'), primary_key=True)
+
+    type_info = BaseBoxManager.type_info.copy(
+        name=u'AboveContentBoxManager',
+        title=u'AboveContentBoxManager',
+        add_view=u'add_box_manager_above_content',
+        dotted_class='kotti_boxes.resources.AboveContentBoxManager',
+        )

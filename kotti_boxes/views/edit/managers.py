@@ -14,6 +14,7 @@ from kotti_boxes import _
 from kotti_boxes.resources import RightBoxManager
 from kotti_boxes.resources import LeftBoxManager
 from kotti_boxes.resources import AboveFooterBoxManager
+from kotti_boxes.resources import AboveContentBoxManager
 
 
 class BoxManagerSchema(ContentSchema):
@@ -46,6 +47,14 @@ class AboveFooterBoxManagerSchema(BoxManagerSchema):
     def after_bind(self, node, kw):
         super(AboveFooterBoxManagerSchema, self).after_bind(node, kw)
         node['title'].default = _('AboveFooterBoxManager')
+
+
+class AboveContentBoxManagerSchema(BoxManagerSchema):
+    """ Schema for BoxManager. """
+
+    def after_bind(self, node, kw):
+        super(AboveContentBoxManagerSchema, self).after_bind(node, kw)
+        node['title'].default = _('AboveContentBoxManager')
 
 
 @view_config(name=RightBoxManager.type_info.add_view, permission='add',
@@ -100,3 +109,21 @@ class AboveFooterBoxManagerEditForm(EditFormView):
     """ Form to edit existing calendars. """
 
     schema_factory = AboveFooterBoxManagerSchema
+
+
+@view_config(name=AboveContentBoxManager.type_info.add_view, permission='add',
+             renderer='kotti:templates/edit/node.pt')
+class AboveContentBoxManagerAddForm(AddFormView):
+    """ Form to add a new instance of BoxManager. """
+
+    schema_factory = AboveContentBoxManagerSchema
+    add = AboveContentBoxManager
+    item_type = _(u"AboveContentBoxManager")
+
+
+@view_config(name='edit', context=AboveContentBoxManager, permission='edit',
+             renderer='kotti:templates/edit/node.pt')
+class AboveContentBoxManagerEditForm(EditFormView):
+    """ Form to edit existing calendars. """
+
+    schema_factory = AboveContentBoxManagerSchema

@@ -19,6 +19,7 @@ def custom_settings():
                                'kotti_boxes.kotti_configure',
         'kotti_boxes.managers': 'kotti_boxes.resources.RightBoxManager '
                                 'kotti_boxes.resources.LeftBoxManager '
+                                'kotti_boxes.resources.AboveContentBoxManager '
                                 'kotti_boxes.resources.AboveFooterBoxManager ',
         'kotti_boxes.boxes': 'kotti_boxes.resources.BannerBox '
                              'kotti_boxes.resources.TextBox',
