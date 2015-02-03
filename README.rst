@@ -1,8 +1,6 @@
 kotti_boxes
 ***********
 
-[![Build Status](https://travis-ci.org/truelab/kotti_boxes.svg)](https://travis-ci.org/truelab/kotti_boxes)
-
 This is a backend only extension that allows to add one or more
 box manager groups.
 
@@ -108,8 +106,8 @@ Probably this package will be rebranded under kotti_boxes.
 
 Development happens at https://github.com/davidemoro/kotti_boxes
 
-.. |build status| image:: https://secure.travis-ci.org/davidemoro/kotti_boxes.png?branch=master
-.. _build status: http://travis-ci.org/davidemoro/kotti_boxes
+.. |build status| image:: https://secure.travis-ci.org/truelab/kotti_boxes.png?branch=master
+.. _build status: http://travis-ci.org/truelab/kotti_boxes
 .. _Find out more about Kotti: http://pypi.python.org/pypi/Kotti
 
 Setup
