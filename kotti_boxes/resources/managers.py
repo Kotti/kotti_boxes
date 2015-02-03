@@ -8,7 +8,6 @@ Created on 2015-01-27
 from sqlalchemy import Column
 from sqlalchemy import ForeignKey
 from sqlalchemy import Integer
-from zope.interface import implements
 
 from kotti_boxes.resources import BaseBoxManager
 
