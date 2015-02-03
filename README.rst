@@ -76,8 +76,7 @@ Advantages:
 * add permissions and security in general, you can delegate the box management
   using the standard sharing view
 
-* you can add more than one custom view to your box instances and let the box
-  manager choose the 
+* you can add more than one custom view to your box instances
 
 Disadvantages:
 
