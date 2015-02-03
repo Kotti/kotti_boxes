@@ -64,3 +64,7 @@ class BaseBoxManager(Content):
     id = Column(Integer, ForeignKey('contents.id'), primary_key=True)
 
     type_info = box_manager_type_info
+
+    def __init__(self, **kwargs):
+        super(BaseBoxManager, self).__init__(**kwargs)
+        self.in_navigation = False
