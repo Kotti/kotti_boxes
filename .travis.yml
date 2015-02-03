@@ -1,6 +1,5 @@
 language: python
 python:
-  - "2.6"
   - "2.7"
 env:
   - KOTTI_TEST_DB_STRING=postgresql://postgres@localhost:5432/kotti_boxes_testing
