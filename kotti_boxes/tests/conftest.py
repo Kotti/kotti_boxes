@@ -5,9 +5,9 @@ Created on 2015-01-27
 :author: Davide Moro (d.moro@truelab.eu)
 """
 
-pytest_plugins = "kotti"
-
 from pytest import fixture
+
+pytest_plugins = "kotti"
 
 
 @fixture(scope='session')
