@@ -1,9 +1,6 @@
 kotti_boxes
 ***********
 
-.. |build status stable| image:: https://img.shields.io/travis/truelab/kotti_boxes/master.svg?style=flat-square
-.. _build status stable: http://travis-ci.org/truelab/kotti_boxes
-
 This is a backend only extension that allows to add one or more
 box manager groups.
 
