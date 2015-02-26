@@ -1,8 +1,8 @@
 History
 =======
 
-0.1.1 (unreleased)
-----------------
+0.1.1 (2015-02-26)
+------------------
 
 - Updated development version (from 0.2 to 0.1.1)
   [davidemoro]
