@@ -46,6 +46,28 @@ def test_add_right_box(webtest, dummy_manager):
 
 
 @mark.user('admin')
+def test_add_right_box2(webtest, dummy_manager, root):
+    """ We should check if the added item is an instance
+        of TextBox instead of Document
+    """
+
+    resp = webtest.get('/right/add_text_box')
+
+    # submit empty form
+    form = resp.forms['deform']
+    form['title'] = u'new box'
+    resp = form.submit('save')
+    assert resp.status_code == 302
+    resp = resp.follow()
+    assert 'Item was added.' in resp.body
+
+    # Content added, let's check if it isn't a document
+    # instance (it should be a TextBoxInstance)
+    from kotti_boxes.resources import TextBox
+    assert isinstance(root['right']['new-box'], TextBox)
+
+
+@mark.user('admin')
 def test_edit_box(webtest, dummy_manager):
     """ Box should be editable"""
 
