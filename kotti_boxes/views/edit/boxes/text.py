@@ -44,5 +44,5 @@ class TextBoxEditForm(DocumentEditForm):
              renderer='kotti:templates/edit/node.pt')
 class TextBoxAddForm(DocumentAddForm):
     item_type = _(u"Text Box")
-    item_class = TextBox
+    add = TextBox
     schema_factory = TextBoxSchema
