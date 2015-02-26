@@ -4,7 +4,8 @@ History
 0.1.2 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Fixes Travis CI build
+  [davidemoro]
 
 
 0.1.1 (2015-02-26)
