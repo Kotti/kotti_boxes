@@ -11,6 +11,14 @@ History
   wasn't a a TextBox instance)
   [davidemoro]
 
+- Fixed a bug in BannerBox addform (the link
+  attribute wasn't saved)
+  [davidemoro]
+
+- The BannerBox's link now accepts also internal
+  urls (eg: /en/about)
+  [davidemoro]
+
 
 0.1 (2015-02-24)
 ----------------

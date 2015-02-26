@@ -10,11 +10,11 @@ import colander
 from kotti_boxes import _
 
 VALID_PROTOCOLS = ('http',)
-URL_REGEXP = r'(%s)s?://[^\s\r\n]+' % '|'.join(VALID_PROTOCOLS)
+URL_REGEXP = r'((%s)s?:/)?/[^\s\r\n]+' % '|'.join(VALID_PROTOCOLS)
 
 
 def link_validator(node, value):
-    """ Raise a colander.Invalid exceptioni if the provided url
+    """ Raise a colander.Invalid exception if the provided url
         is not valid
     """
     def raise_invalid_url(node, value):

@@ -16,3 +16,19 @@ def test_validate_ko():
         assert link_validator({}, 'ahttp://google.it') is None
     with raises(colander.Invalid):
         assert link_validator({}, 'https:google.it') is None
+
+
+def test_validate_internal_ok():
+    from kotti_boxes.validators import link_validator
+
+    assert link_validator({}, '/it') is None
+    assert link_validator({}, '/en/about') is None
+
+
+def test_validate_internal_ko():
+    from kotti_boxes.validators import link_validator
+
+    import colander
+
+    with raises(colander.Invalid):
+        assert link_validator({}, 'en') is None

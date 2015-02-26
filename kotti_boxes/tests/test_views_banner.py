@@ -55,3 +55,23 @@ class TestBannerBoxAddForm:
         assert file.filename == u'myfile.png'
         assert file.mimetype == u'image/png'
         assert file.size == len('filecontents')
+
+    def test_add2(self, config):
+        """ The added item should be a BannerBox instance """
+        view = self.make_one()
+        file = view.add(
+            title=u'A title',
+            description=u'A description',
+            tags=[],
+            link=u'http://google.com',
+            file=dict(
+                fp=StringIO('filecontents'),
+                filename=u'myfile.png',
+                mimetype=u'image/png',
+                ),
+            )
+
+        assert file.title == u'A title'
+        assert file.link == u'http://google.com'
+        from kotti_boxes.resources import BannerBox
+        assert isinstance(file, BannerBox)

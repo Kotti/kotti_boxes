@@ -75,6 +75,7 @@ class BannerBoxAddForm(ImageAddForm):
             description=appstruct['description'],
             data=buf,
             filename=filename,
+            link=appstruct.get('link', u''),
             mimetype=appstruct['file']['mimetype'],
             size=len(buf),
             )
