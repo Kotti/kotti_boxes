@@ -44,6 +44,7 @@ def BannerBoxSchema(tmpstore):
 
 
 @view_config(name='edit', permission='edit',
+             context=BannerBox,
              renderer='kotti:templates/edit/node.pt')
 class BannerBoxEditForm(ImageEditForm):
     def schema_factory(self):

@@ -4,7 +4,11 @@ History
 0.1.2 (unreleased)
 ------------------
 
-- Fixes Travis CI build
+- Fixed Travis CI build
+  [davidemoro]
+
+- Fixed problem with edit form on BannerBox (no context
+  discriminator)
   [davidemoro]
 
 
