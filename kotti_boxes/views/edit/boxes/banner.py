@@ -18,6 +18,7 @@ from pyramid.view import view_config
 
 from kotti_boxes import _
 from kotti_boxes.resources import BannerBox
+from kotti_boxes.interfaces import IBannerBox
 from kotti_boxes.validators import link_validator
 
 
@@ -44,7 +45,7 @@ def BannerBoxSchema(tmpstore):
 
 
 @view_config(name='edit', permission='edit',
-             context=BannerBox,
+             context=IBannerBox,
              renderer='kotti:templates/edit/node.pt')
 class BannerBoxEditForm(ImageEditForm):
     def schema_factory(self):
