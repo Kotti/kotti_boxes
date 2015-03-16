@@ -8,6 +8,9 @@ History
   Initialized to [] on our resources'type_info.
   [davidemoro]
 
+- Fixed bug with BannerBox edit form.
+  [davidemoro]
+
 0.1.2 (2015-03-03)
 ------------------
 

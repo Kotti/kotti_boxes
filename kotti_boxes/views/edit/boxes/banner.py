@@ -52,6 +52,19 @@ class BannerBoxEditForm(ImageEditForm):
         tmpstore = FileUploadTempStore(self.request)
         return BannerBoxSchema(tmpstore)
 
+    def edit(self, **appstruct):
+        # override (no tags in our form)
+        title = appstruct['title']
+        self.context.title = title
+        self.context.description = appstruct['description']
+        self.context.link = appstruct['link']
+        if appstruct['file']:
+            buf = appstruct['file']['fp'].read()
+            self.context.data = buf
+            self.context.filename = appstruct['file']['filename']
+            self.context.mimetype = appstruct['file']['mimetype']
+            self.context.size = len(buf)
+
 
 @view_config(name=BannerBox.type_info.add_view, permission='add',
              renderer='kotti:templates/edit/node.pt')

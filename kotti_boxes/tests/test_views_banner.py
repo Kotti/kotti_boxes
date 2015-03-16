@@ -15,7 +15,7 @@ class TestBannerBoxEditForm:
         view.edit(
             title=u'A title',
             description=u'A description',
-            tags=[],
+            link='',
             file=dict(
                 fp=StringIO('filecontents'),
                 filename=u'myfile.png',
