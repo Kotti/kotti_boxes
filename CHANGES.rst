@@ -1,7 +1,7 @@
 History
 =======
 
-0.1.3 (unreleased)
+0.1.3 (2015-03-16)
 ------------------
 
 - No more ``selectable_default_views`` inheritance for box related types.
