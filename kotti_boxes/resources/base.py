@@ -50,7 +50,9 @@ class BoxManagerTypeInfo(TypeInfo):
         # (it returns the original TypeInfo class)
         return self.__class__(**d)
 
-data = dict(addable_to=[u'Document'],)
+data = dict(addable_to=[u'Document'],
+            selectable_default_views=[],
+            )
 box_manager_type_info_data = Content.type_info.copy(
     **data
     ).__dict__.copy()

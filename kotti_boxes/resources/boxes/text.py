@@ -25,7 +25,8 @@ class TextBox(Document):
         name=u'TextBox',
         title=u'TextBox',
         add_view=u'add_text_box',
-        addable_to=[]  # updated at startup time
+        addable_to=[],  # updated at startup time
+        selectable_default_views=[],
         )
 
     def __init__(self, **kwargs):
