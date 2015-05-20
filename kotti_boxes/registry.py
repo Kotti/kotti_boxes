@@ -58,8 +58,12 @@ class BoxRegistry(BaseBoxRegistry):
     implements(IBoxRegistry)
 
     def _update_addable_to(self, component_class):
-        component_class.type_info.addable_to += \
-            box_manager_registry.get_component_names()
+        if not getattr(component_class.type_info, 'addable_to', None):
+            # update addable_to only if it is empty or not defined.
+            # This way you can decide to add a box to a particular
+            # box manager
+            component_class.type_info.addable_to += \
+                box_manager_registry.get_component_names()
 
     def register_component(self, component):
         component_class = self._convert_component(component)

@@ -4,8 +4,10 @@ History
 0.1.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
-
+- If you provide a non empty ``addable_to`` property to your box ``type_info`` you
+  can decide where your box will be addable. Otherwise it will be addable in
+  all box registered box managers.
+  [davidemoro]
 
 0.1.3 (2015-03-16)
 ------------------
