@@ -37,7 +37,7 @@ class TestBannerBoxAddForm:
 
     def test_add(self, config):
         view = self.make_one()
-        file = view.add(
+        file_obj = view.add(
             title=u'A title',
             description=u'A description',
             tags=[],
@@ -48,13 +48,13 @@ class TestBannerBoxAddForm:
                 ),
             )
 
-        assert file.title == u'A title'
-        assert file.description == u'A description'
-        assert file.tags == []
-        assert file.data == 'filecontents'
-        assert file.filename == u'myfile.png'
-        assert file.mimetype == u'image/png'
-        assert file.size == len('filecontents')
+        assert file_obj.title == u'A title'
+        assert file_obj.description == u'A description'
+        assert file_obj.tags == []
+        assert file_obj.data
+        assert file_obj.filename == u'myfile.png'
+        assert file_obj.mimetype == u'image/png'
+        assert file_obj.size == len('filecontents')
 
     def test_add2(self, config):
         """ The added item should be a BannerBox instance """
