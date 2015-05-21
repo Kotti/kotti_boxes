@@ -54,7 +54,6 @@ class TestBannerBoxAddForm:
         assert file_obj.data
         assert file_obj.filename == u'myfile.png'
         assert file_obj.mimetype == u'image/png'
-        assert file_obj.size == len('filecontents')
 
     def test_add2(self, config):
         """ The added item should be a BannerBox instance """
