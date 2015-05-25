@@ -1,7 +1,7 @@
 History
 =======
 
-0.1.4 (unreleased)
+0.1.4 (2015-05-25)
 ------------------
 
 - If you provide a non empty ``addable_to`` property to your box ``type_info`` you
