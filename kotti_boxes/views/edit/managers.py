@@ -154,3 +154,7 @@ class BelowContentBoxManagerEditForm(EditFormView):
     """ Form to edit existing calendars. """
 
     schema_factory = BelowContentBoxManagerSchema
+
+
+def includeme(config):
+    config.scan(__name__)

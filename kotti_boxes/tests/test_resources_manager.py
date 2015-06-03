@@ -69,6 +69,10 @@ def test_rightbox_addable_in_root_one_time(root, db_session, config):
     config.include('kotti_boxes')
     box = RightBoxManager()
     # right box is addable, ok
+    from kotti_boxes.views.edit import boxes
+    from kotti_boxes.views.edit import managers
+    config.include(managers)
+    config.include(boxes)
     assert box.type_info.addable(root, DummyRequest())
 
     # ok, let's add it
@@ -88,6 +92,11 @@ def test_leftbox_addable_in_root_one_time(root, db_session, config):
 
     config.include('kotti_boxes')
     box = LeftBoxManager()
+
+    from kotti_boxes.views.edit import boxes
+    from kotti_boxes.views.edit import managers
+    config.include(managers)
+    config.include(boxes)
     # left box is addable, ok
     assert box.type_info.addable(root, DummyRequest())
 

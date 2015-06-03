@@ -27,7 +27,10 @@ def kotti_configure(settings):
     :type settings: dict
     """
 
-    settings['pyramid.includes'] += ' kotti_boxes'
+    settings['pyramid.includes'] += ' '.join((
+        ' kotti_boxes',
+        ' kotti_boxes.views.edit.boxes',
+        ' kotti_boxes.views.edit.managers',))
 
     # register addable types
     managers = get_managers(settings)
@@ -82,5 +85,3 @@ def includeme(config):
                     permission=u'view',
                     renderer='kotti:templates/edit/contents.pt',
                     )
-
-    config.scan(__name__)
