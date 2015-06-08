@@ -4,7 +4,11 @@ History
 0.1.6 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Transfer package ownership from ``truelab`` to ``Kotti`` organization
+  [davidemoro]
+
+- Update README (project links)
+  [davidemoro]
 
 
 0.1.5 (2015-06-08)
