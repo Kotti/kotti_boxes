@@ -1,7 +1,7 @@
 History
 =======
 
-0.1.5 (unreleased)
+0.1.5 (2015-06-08)
 ------------------
 
 - Move to modular ``config.include`` strategy for view registrations (it should help overriding views)
