@@ -147,6 +147,13 @@ Development
 Contributions to kotti_boxes are highly welcome.
 Just clone its `Github repository`_ and submit your contributions as pull requests.
 
+Funding
+=======
+
+Developed with the support of:
+
+* MIP (International Business School of Politecnico di Milano) - http://www.mip.polimi.it
+
 .. _alembic: http://pypi.python.org/pypi/alembic
 .. _alembic documentation: http://alembic.readthedocs.org/en/latest/index.html
 .. _tracker: https://github.com/davidemoro/kotti_boxes/issues

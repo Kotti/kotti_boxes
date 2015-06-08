@@ -7,6 +7,9 @@ History
 - Move to modular ``config.include`` strategy for view registrations (it should help overriding views)
   [davidemoro]
 
+- Update README file (funding)
+  [davidemoro]
+
 
 0.1.4 (2015-05-25)
 ------------------
